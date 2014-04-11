@@ -1,4 +1,6 @@
 Work::Application.routes.draw do
+  resources :products
+
   resources :manufacturers
 
   resources :categories
