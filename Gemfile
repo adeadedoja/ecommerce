@@ -15,6 +15,9 @@ gem 'devise'
 gem 'pundit'
 gem 'simple_form'
 gem 'thin'
+group :production do
+  gem 'pg', '0.12.2'
+end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]
