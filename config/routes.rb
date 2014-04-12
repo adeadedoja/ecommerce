@@ -1,4 +1,8 @@
 Work::Application.routes.draw do
+  resources :shippers
+
+  resources :suppliers
+
   resources :products
 
   resources :manufacturers
