@@ -15,5 +15,11 @@
   <%= @product_image.created_at %>
 </p>
 
+<p>
+  <b>Picture:</b>
+  <%= image_tag @product_image.picture.url %>
+</p>
+
+
 <%= link_to 'Edit', edit_product_image_path(@product_image) %> |
 <%= link_to 'Back', product_images_path %>

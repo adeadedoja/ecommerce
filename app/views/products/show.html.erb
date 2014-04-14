@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<h3>Pictures (<%= @product.product_image.count %>)</h3>
+<ol class="product_image">
+	<%= render @product_image %>
+</ol>
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
