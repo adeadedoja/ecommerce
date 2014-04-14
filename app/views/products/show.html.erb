@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<h2>Add Pictures</h2>
+<section>
+<%= render 'shared/img' %>
+</section>
 <h3>Pictures (<%= @product.product_image.count %>)</h3>
 <ol class="product_image">
 	<%= render @product_image %>

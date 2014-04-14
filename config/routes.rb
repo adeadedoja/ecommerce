@@ -1,4 +1,6 @@
 Work::Application.routes.draw do
+  get 'static_pages/term'
+
   resources :product_images
 
   resources :shippers
