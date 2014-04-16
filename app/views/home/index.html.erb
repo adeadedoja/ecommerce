@@ -1,6 +1,35 @@
 <h3>Home</h3>
+<!--
 <% if !current_user.nil? and current_user.admin? %>
   <% @users.each do |user| %>
     <p>User: <%=link_to user.email, user %> Role: <%= user.role unless user.role.nil? %></p>
   <% end %>
 <% end %>
+-->
+<h1>products AVailable</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Unit price</th>
+      <th>Quantity</th>
+      <th>Manufacturer</th>
+	   <th></th>
+      </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= product.description %></td>
+        <td><%= product.unit_price %></td>
+        <td><%= product.quantity %></td>
+        <td><%= product.manufacturer_id %></td>
+        <td><%= link_to 'Show', product %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
