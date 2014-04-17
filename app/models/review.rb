@@ -3,5 +3,4 @@ class Review < ActiveRecord::Base
 	belongs_to :product
 	belongs_to :user
 	
-	default_scope_order: 'reviews.created_at DESC'
 end

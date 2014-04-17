@@ -6,6 +6,27 @@
   <% end %>
 <% end %>
 -->
+<div>
+
+<div class="row">
+	<% @products.each do |product| %>
+  <div class="col-md-3">
+	<div class="prod">
+		<div class="prod_img">
+			Pictures (<%= @image.find_by_product_id('@product.id') %>)
+			
+		</div>
+		<div class="prod_txt"><%= product.name %><br />
+		<%= link_to('View Product', product, :class => 'btn btn-primary')  %>
+		
+		</div>
+	</div>
+   </div>
+   <% end %>
+</div>
+
+
+</div>
 <h1>products AVailable</h1>
 
 <table>
